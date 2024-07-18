@@ -1,0 +1,376 @@
+*{
+    margin: 0%;
+}
+nav{
+    position: fixed;
+}
+header{
+    width: 100%;
+    margin-left: 0em;
+    padding: 6em 0em;
+    background-image: url(..//img/white-purple-circles-color-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row1{
+    display: flex;
+    padding: 1.5em;
+}
+.col2{
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+}
+.row{
+    width: 100%;
+    margin-left: 1.5em;
+}
+.col1{
+    width: 48%;
+    display: inline-block;
+    margin-top: 3em;
+    vertical-align: top;
+    text-align: center; 
+}
+.hello{
+    vertical-align: middle;
+    padding: 4em 0em;
+}
+.hello h2{
+    font-size: 2.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tam{
+    width: 70%;
+}
+ h3{
+    margin-top: 2em;
+    font-size: 1.8em;
+    text-align: center;
+}
+.col2 ul {
+    display: flex;
+    animation: cambio 15s infinite alternate ease-in-out;
+    width: 400%;
+}
+
+.col2 li {
+    width: 90%;
+    list-style: none;
+}
+
+.col2 img {
+    width: 100%;
+    height: 450px;
+}
+img{
+    width: 100%;
+    animation-name: show ;
+    
+}
+
+
+@keyframes cambio {
+    0%{ margin-left: 0%; }
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%; }
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%; }
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%; }
+    95%{ margin-left: -300%;}
+
+}
+#historiabaile p{
+    margin-top: 0.5em;
+    text-align: left;
+}
+#historiabaile .col1{
+    width: 47%;
+    margin-right: 1.5em;
+    display: inline-block;
+}
+.imagen01{
+    width: 90%;
+}
+.imagen01:hover{
+    width: 100%;
+    
+
+}
+#tipos a{
+    color: white;
+    text-decoration: none;
+}
+.imagen01:hover .text{
+    width: 50%;
+}
+button{
+    margin-top: 1em;
+    border-radius: 40%;
+    background-color:  rgba(78, 11, 145, 0.473) ;
+    padding: 0.3em 0.6em;
+    color: rgba(240, 248, 255, 0.952);
+}
+button:hover{
+    background-color: azure;
+    color: black;
+}
+.botontipos a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#tipos img{
+    height: 400px;
+    padding: 0em;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.row2{
+    margin-left: 1.5em;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.col02{
+    display: inline-block;
+    width: 22%;
+    margin-right: 1.5em;
+    margin-top: 2em;
+    
+}
+.imagen8:hover{
+    width: 30%;
+}
+
+
+@media (max-width: 900px) and (min-width: 601px){
+    *{
+        margin: 0%;
+    }
+    nav{
+        position: fixed;
+    }
+    header{
+        padding: 3em 0em;
+        width: 100%;
+        margin-left: 0em;
+        padding: 3em 0em;
+        margin-right: 0em;
+       
+    }
+    .row1{
+        display: block;
+        padding: 1.5em;
+        margin-left: 1.5em;
+    }
+    .col2{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-left: -1em;
+    }
+    .row{
+        width: 100%;
+        margin-left: 1em;
+    }
+    .col1{
+        width: 100%;
+        display: inline-block;
+        margin-top: 2em;
+        vertical-align: top;
+        text-align: center; 
+    }
+    .hello{
+        vertical-align: middle;
+        padding: 3em 0em;
+        line-height: 3em;
+    }
+    .hello h2{
+        font-size: 2em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+     h3{
+        margin-top: 2em;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .col2 ul {
+        display: flex;
+        animation: cambio 15s infinite alternate ease-in-out;
+        width: 400%;
+    }
+    
+    .col2 li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .col2 img {
+        width: 100%;
+        height: 450px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    #historiabaile p{
+        margin-top: 0.5em;
+        text-align: left;
+    }
+    #historiabaile .col1{
+        width: 90%;
+        margin-right: 0em;
+        display: block;
+    }
+    .imagen01{
+        width: 85%;
+    }
+    .imagen01:hover{
+        width: 95%;
+    }
+    #tipos a{
+        color: white;
+        text-decoration: none;
+    }
+    #tipos img{
+        height: 400px;
+        padding: 0em;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .row2{
+        margin-left: 1.5em;
+        width: 100%;
+        margin-top: 2em;
+    }
+    
+    .col02{
+        display: inline-block;
+        width: 45%;
+        margin-right: 1.5em;
+        margin-top: 2em; 
+    }
+    p{font-size:1.1em ;}
+    
+}
+@media (max-width: 600px){
+    *{
+        margin: 0%;
+    }
+    nav{
+        position: fixed;
+    }
+    p{
+        font-size: 1.6em;
+    }
+    
+    header{
+        padding: 3em 0em;
+        width: 100%;
+        margin-left: 0em;
+        padding: 2em 0em;
+        margin-right: 0em;
+       
+    }
+    .row1{
+        display: block;
+        padding: 1.5em;
+        margin-left: 1em;
+    }
+    .col2{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-left: -1em;
+    }
+    .row{
+        width: 100%;
+        margin-left: 1em;
+    }
+    .col1{
+        width: 100%;
+        display: inline-block;
+        margin-top: 2em;
+        vertical-align: top;
+        text-align: center; 
+    }
+    .hello{
+        vertical-align: middle;
+        padding: 3em 0em;
+        line-height: 3em;
+    }
+    .hello h2{
+        font-size: 2em;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+     h3{
+        margin-top: 2em;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .col2 ul {
+        display: flex;
+        animation: cambio 15s infinite alternate ease-in-out;
+        width: 400%;
+    }
+    
+    .col2 li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .col2 img {
+        width: 100%;
+        height: 450px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    #historiabaile p{
+        margin-top: 0.5em;
+        text-align: left;
+    }
+    #historiabaile .col1{
+        width: 90%;
+        margin-right: 0em;
+        display: block;
+    }
+    .imagen01{
+        width: 85%;
+    }
+    .imagen01:hover{
+        width: 95%;
+    }
+    #tipos a{
+        color: white;
+        text-decoration: none;
+    }
+    #tipos img{
+        height: 400px;
+        padding: 0em;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .row2{
+        margin-left: 1.5em;
+        width: 100%;
+        margin-top: 2em;
+    }
+    
+    .col02{
+        display: inline-block;
+        width: 90%;
+        margin-right: 1.5em;
+        margin-top: 2em; 
+    }
+    
+}
+

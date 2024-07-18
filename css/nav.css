@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    width: 100%;
+    text-align: center;
+    padding: 0.2em;
+    vertical-align: top;
+    background-color: rgba(34, 0, 66, 0.658);
+    position: absolute;
+    
+}
+
+.menu1{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu1 li a {
+    display: block;
+    padding: 15px 20px ;
+    color: white;
+    text-decoration: none;
+}
+.menu1 li:hover{
+    background-color: rgba(235, 235, 235, 0.479);
+    color: black;
+    border: 1px rgba(34, 0, 66, 0.658) solid
+  
+}
+.menu2{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+}
+.menu1 li:hover .menu2{
+    display: block;
+}
+.menu2 li:hover{
+    background-color: rgba(78, 11, 145, 0.589);
+}
+.menu2 li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: rgba(240, 248, 255, 0.473);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    padding: 0.3em 0.5em;
+}
+footer{
+    padding: 1.5em 0em;
+    background-color: rgba(137, 43, 226, 0.349);
+}
+.row3{
+    text-align: center;
+    margin-left: 2em;
+    width: 90%;
+}
+footer{
+    margin-top: 2em;
+}
+footer   a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+   margin-left: 2em;
+   margin-top: 1.5em;
+   display: inline-block;
+}
+footer i{
+    font-size: 1.5em;
+}
+.telefono2{
+    display: none;
+}
+footer a:hover{
+    color: white;
+    font-size: 1em;
+}
+/* Estilo para el icono del menú (icono de hamburguesa) */
+.menu-icon {
+    display: none; /* Oculta el icono del menú por defecto */
+    font-size: 30px; /* Establece el tamaño de la fuente del icono del menú */
+    padding: 12px 14px; /* Agrega espacio alrededor del icono del menú */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el icono del menú */
+    color: white; /* Establece el color del icono del menú en blanco */
+    margin-right: 70em;
+}
+
+/* Estilo para la lista de elementos del menú */
+.menu-items {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    
+    display: flex; /* Establece la lista como un contenedor flexible */
+    flex-direction: row; /* Organiza los elementos de la lista en una fila */
+    width: 100%;
+}
+
+/* Estilo para cada elemento de la lista del menú */
+.menu-items li {
+    flex: 11; /* Permite que cada elemento de la lista crezca igualmente para llenar el espacio disponible */
+}
+
+/* Oculta el checkbox */
+#menu-toggle {
+    display: none; /* Oculta el checkbox de la vista */
+}
+.menu2{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+}
+.menu li:hover .menu2{
+    display: block;
+}
+.telefono2{
+    display: none;
+}
+/* Media query para pantallas con un ancho máximo de 600 píxeles */
+@media (max-width: 600px) {
+    .telefono2{
+        display: block;
+    }
+    h3{
+        opacity: 7;
+    }
+    
+    .menu2{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        margin-left: 3em;
+        margin-top: -6em;
+    }
+    .menu li:hover .menu2{
+        display: inline-block;
+    }
+    .telefono{
+        display: none;
+    }
+    
+    /* Estilo para la lista de elementos del menú en pantallas pequeñas */
+    .menu-items {
+        flex-direction: column; /* Organiza los elementos de la lista en una columna */
+        display: none; /* Oculta los elementos del menú por defecto */
+        margin-right: 5em;
+        margin-top: -3.5em;
+        width: 25%;
+    }
+    .menu2{
+        flex-direction: row;
+    }
+    /* Muestra el icono del menú en pantallas pequeñas */
+    .menu-icon {
+        display: block; /* Muestra el icono del menú */
+    }
+
+    /* Estilo para mostrar el menú cuando el checkbox está marcado */
+    #menu-toggle:checked + .menu-icon + .menu-items {
+        display: flex; /* Muestra los elementos del menú como un contenedor flexible */
+    }
+    .telefono2{
+        display: block;
+    }
+    footer .row3{
+        margin-top: 1.2em;
+        margin-left: 0.5em;
+    }
+    
+}
+@media (max-width: 900px) and (min-width: 601px) {
+    
+    .menu2{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        margin-left: 5em;
+        margin-top: -4.5em;
+
+    }
+    .menu li:hover .menu2{
+        display: inline-block;
+    }
+    .telefono2{
+        display: block;
+    }
+    .telefono{
+        display: none;
+    }
+    
+    /* Estilo para la lista de elementos del menú en pantallas pequeñas */
+    .menu-items {
+        flex-direction: column; /* Organiza los elementos de la lista en una columna */
+        display: none; /* Oculta los elementos del menú por defecto */
+        margin-right: 5em;
+        width: 25%;
+        margin-top: -3.8em;
+        margin-left: 2em;
+    }
+    .menu2{
+        flex-direction: row;
+    }
+    /* Muestra el icono del menú en pantallas pequeñas */
+    .menu-icon {
+        display: block; /* Muestra el icono del menú */
+    }
+
+    /* Estilo para mostrar el menú cuando el checkbox está marcado */
+    #menu-toggle:checked + .menu-icon + .menu-items {
+        display: flex; /* Muestra los elementos del menú como un contenedor flexible */
+    }
+    .flecha{
+        box-shadow: 0px 0px 5px 5px rgba(255, 160, 212, 0.856);
+        width: 35px;             /*ancho*/
+        height: 35px;            /*alto*/
+        position: fixed;         /*posicion fija*/
+        bottom: 35px;            /*abajo*/
+        right: 35px;             /*margen derecha*/
+        background: rgba(34, 0, 66, 0.658);;     /*color dentro de la caja*/
+        color: white;
+        font-size: 1.5em;          /*tamaño fuente*/
+        border-radius: 50%;      /*border circular*/
+        padding: 0.5em;  /*acomodar margen interna*/
+        display: block; 
+        
+        
+    }
+    .flecha a{
+        color: aliceblue;
+    }
+    .flecha:hover{
+        background-color: rgba(240, 248, 255, 0.205);
+       
+    }
+}
+
+.flecha{
+    box-shadow: 0px 0px 5px 5px rgba(255, 160, 212, 0.856);
+    width: 35px;             /*ancho*/
+    height: 35px;            /*alto*/
+    position: fixed;         /*posicion fija*/
+    bottom: 35px;            /*abajo*/
+    right: 35px;             /*margen derecha*/
+    background: rgba(34, 0, 66, 0.658);;     /*color dentro de la caja*/
+    color: white;
+    font-size: 1.5em;          /*tamaño fuente*/
+    border-radius: 50%;      /*border circular*/
+    padding: 0.5em;  /*acomodar margen interna*/
+    display: block; 
+    
+}
+.flecha a{
+    color: aliceblue;
+}
+.flecha:hover{
+    background-color: rgba(240, 248, 255, 0.205);
+   
+}
